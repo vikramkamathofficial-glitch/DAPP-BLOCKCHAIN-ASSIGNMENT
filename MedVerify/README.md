@@ -1,7 +1,7 @@
 # MedVerify – Blockchain Medicine Authenticity DApp
 
 **Course:** Blockchain Technology (CSE4444) – Assignment 2
-**Student:** `<YOUR NAME>` | **Reg. No:** `<YOUR REG NO>`
+**Student:** `vikram gangadhar kamath` | **Reg. No:** `230905014`
 
 ## 1. Problem addressed
 
