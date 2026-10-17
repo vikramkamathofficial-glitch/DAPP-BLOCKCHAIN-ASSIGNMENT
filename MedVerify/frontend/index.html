@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>MedVerify - Medicine Authenticity DApp</title>
+  <link rel="stylesheet" href="style.css" />
+  <script src="https://cdn.jsdelivr.net/npm/ethers@6.13.4/dist/ethers.umd.min.js"></script>
+</head>
+<body>
+  <header>
+    <h1>MedVerify</h1>
+    <p>Blockchain-based medicine batch verification</p>
+    <div class="wallet">
+      <button id="connectBtn">Connect MetaMask</button>
+      <div id="walletInfo" class="hidden">
+        <span id="account"></span> &middot; <span id="role"></span>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section class="card">
+      <h2>Contract</h2>
+      <label for="contractAddress">Deployed contract address</label>
+      <input id="contractAddress" placeholder="0x..." />
+      <button id="loadContractBtn">Load Contract</button>
+      <p class="muted">Regulator: <span id="regulatorAddr">-</span> | Total batches: <span id="batchCount">-</span></p>
+    </section>
+
+    <section class="card">
+      <h2>Verify a Batch (anyone)</h2>
+      <input id="verifyId" placeholder="Batch ID, e.g. BATCH-001" />
+      <button id="verifyBtn">Verify</button>
+      <div id="verifyResult" class="result"></div>
+    </section>
+
+    <section class="card">
+      <h2>Regulator Panel</h2>
+      <input id="mfrAddress" placeholder="Manufacturer address 0x..." />
+      <div class="row">
+        <button id="approveBtn">Approve Manufacturer</button>
+        <button id="revokeBtn" class="secondary">Revoke Manufacturer</button>
+      </div>
+    </section>
+
+    <section class="card">
+      <h2>Manufacturer Panel</h2>
+      <input id="batchId" placeholder="Batch ID" />
+      <input id="drugName" placeholder="Drug name" />
+      <label for="expiry">Expiry date</label>
+      <input id="expiry" type="date" />
+      <button id="registerBtn">Register Batch</button>
+    </section>
+
+    <section class="card">
+      <h2>Recall a Batch</h2>
+      <input id="recallId" placeholder="Batch ID" />
+      <button id="recallBtn" class="danger">Recall Batch</button>
+    </section>
+
+    <section class="card">
+      <h2>All Registered Batches</h2>
+      <button id="listBtn">Refresh List</button>
+      <table id="batchTable">
+        <thead><tr><th>#</th><th>Batch ID</th></tr></thead>
+        <tbody></tbody>
+      </table>
+    </section>
+
+    <section class="card">
+      <h2>Status</h2>
+      <div id="status" class="status">Not connected.</div>
+    </section>
+  </main>
+
+  <script src="app.js"></script>
+</body>
+</html>

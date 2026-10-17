@@ -1,0 +1,15 @@
+{
+  "name": "medverify-dapp",
+  "version": "1.0.0",
+  "description": "MedVerify - blockchain medicine batch authenticity DApp (CSE4444 Assignment 2)",
+  "scripts": {
+    "test": "node test/run-tests.js",
+    "serve": "npx http-server frontend -p 8080"
+  },
+  "license": "MIT",
+  "devDependencies": {
+    "ethers": "^6.13.4",
+    "ganache": "^7.9.2",
+    "solc": "0.8.26"
+  }
+}
