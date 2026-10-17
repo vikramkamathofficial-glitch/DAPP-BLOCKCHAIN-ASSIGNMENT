@@ -126,15 +126,7 @@ Result: **24 / 24 passed** (full table in [`docs/test-results.md`](docs/test-res
 > (e.g. register a duplicate batch ID, or try approving a manufacturer from a non-regulator account).
 
 ## 7. Screenshots
-
-| Evidence | File |
-|---|---|
-| Smart contract compilation | `docs/screenshots/01-compile.png` |
-| Smart contract deployment | `docs/screenshots/02-deploy.png` |
-| MetaMask wallet connection | `docs/screenshots/03-metamask-connect.png` |
-| Successful transaction | `docs/screenshots/04-success-tx.png` |
-| Failed transaction | `docs/screenshots/05-failed-tx.png` |
-| Blockchain data displayed in the UI | `docs/screenshots/06-ui-data.png` |
+CHECK FOLDER
 
 ## 8. Security notes
 
