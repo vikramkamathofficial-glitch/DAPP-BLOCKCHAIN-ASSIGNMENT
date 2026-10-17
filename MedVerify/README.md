@@ -26,7 +26,7 @@ MedVerify/
 ├── frontend/                   index.html, style.css, app.js (Ethers.js v6 + MetaMask)
 ├── test/run-tests.js           Automated tests (valid / invalid / unauthorised)
 ├── docs/test-results.md        Generated test results table
-├── docs/screenshots/           <-- put your screenshots here
+├── docs/screenshots/           <--screenshots here
 ├── package.json
 └── README.md
 ```
